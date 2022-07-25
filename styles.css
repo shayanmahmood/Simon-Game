@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+ background-color: #000;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+border:2px solid red;
+background-color: none;
+box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 40px 2px rgba(255,0,0,1);
+}
+
+.green {
+  border:2px solid green;
+  background-color: none;
+  box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 60px 2px rgba(0,128,0,1);
+  /* animation: glow 1s alternate infinite; */
+
+}
+
+.blue {
+  border:2px solid blue;
+  background-color: none;
+  box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+  0px 0px 40px 2px rgba(0,0,255,1);
+}
+
+.yellow {
+  border:2px solid yellow;
+  background-color: none;
+  box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+  0px 0px 40px 2px rgba(255,255,0,1);
+}
+
+.pressed {
+  /* box-shadow: 0 0 20px white;
+  background-color: grey; */
+  animation: glow 1s alternate infinite;
+
+}
+
+@keyframes glow {
+  0% {
+    background: rgba(255,255,255,0.7);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 40px 2px rgba(105,135,255,1);
+  }
+  100% {
+    background: rgba(255,255,255,0.2);
+    box-shadow: inset 0px 0px 10px 2px rgba(117,182,255,0.5),
+                      0px 0px 30px 2px rgba(105,135,255,0.3);
+  }
+}
